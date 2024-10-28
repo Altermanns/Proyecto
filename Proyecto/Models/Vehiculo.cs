@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Proyecto.Models
 {
@@ -20,5 +21,14 @@ namespace Proyecto.Models
         public double  precio { get; set; }
         [Required]
         public float kilometraje { get; set; }
+        [Required]
+        public string TipoCombustible { get; set; }
+        [Required]
+        public string Ubicacion { get; set; }
+
+        [Required]
+        [ForeignKey("Vendedor")]
+        public int VendedorId { get; set; }
+        public Usuario Vendedor { get; set; }
     }
 }
