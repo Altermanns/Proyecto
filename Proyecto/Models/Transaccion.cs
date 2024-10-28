@@ -5,7 +5,7 @@ namespace Proyecto.Models
     public class Transaccion
     {
         [Key]
-        public int Id { get; set; }
+        public int IdTransaccion { get; set; }
 
         [Required]
         public int VehiculoId { get; set; }
