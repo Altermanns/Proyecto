@@ -19,6 +19,7 @@ namespace Proyecto.Models
         public DateOnly FechaNacimiento { get; set; }
         [ForeignKey("IdVehiculo")]
         public int vehiculo { get; set; }
-        
+        public Vehiculo Vehiculo { get; set; }
+
     }
 }
